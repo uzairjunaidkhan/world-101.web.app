@@ -1,0 +1,63 @@
+
+<div class="d-flex justify-content-center" style="margin-top: 15px;">
+    <div _ngcontent-hox-c5="" class="text-center">
+        <h1 _ngcontent-hox-c5="" style="font-size: 58px; font-weight: bold;">
+            👋 Hey, here you can find <br>  all the countries in the world</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis impedit aliquam, 
+                <br> quod laudantium quam voluptate eos cupiditate tenetur, fugit ipsum similique, numquam sint ipsa.
+                <br> Assumenda quibusdam earum rerum sunt veritatis?
+            </p>
+            <!-- Search form -->
+
+            <input class="form-control" [(ngModel)]="search" type="text" placeholder="Search" aria-label="Search" id="search" name="search" value="search"> 
+            
+            <button _ngcontent-hox-c6="" type="button" class="btn btn-dark" (click)="findName()"  style="width: 100%; margin-top: 15px;">Search</button>
+            <!-- <button _ngcontent-hox-c6="" type="button" class="btn btn-dark" style="width: 100%; margin-top: 15px;" routerLink="">Show all</button> -->
+           <!-- <h1>{{search}}</h1> -->
+
+           
+
+    </div>
+</div>
+
+
+<div class="container-fluid" style="margin-top: 30px; margin-bottom: 50px; min-width: 330px;">
+    <!-- 
+        <div class="card" style="margin-top: 10%; min-width: 330px;">
+            <div class="card-body" style="background-color:whitesmoke;"> -->
+    
+                <div class="row "  *ngFor="let data of rowData2" style="padding: 20 0 20 0; margin-bottom: 25px; ">
+        
+                    <div class="col mb-5 d-flex align-items-center justify-content-center" style="margin-bottom: 0px !important; padding: 0px;">
+                        <img src="{{data.flags.png}}" alt="...">
+                        
+                    </div>
+                    <div class="col mb-5" style="margin-bottom: 0px !important; margin-top: 25px;  ">
+                        <h5 class="fw-bolder">{{data.name.official}}</h5>
+                        <br>
+        
+                        <div class="row">
+                        
+                                <div class="col mb-5" style="margin-bottom: 0px !important;">
+                                        <h5>Name: {{data.name.common}}</h5>
+                                        <h5>Region: {{data.region}}</h5>
+                                        <h5>Continents: {{data.continents}}</h5>
+                                        <!-- <h5>Continents: {{data.languages['']}}</h5> -->
+                                        
+                
+                                </div>
+                                <div class="col mb-5" style="margin-bottom: 0px !important;">      
+                                        <h5>Capital: {{data.capital}}</h5>
+                                        <h5>Population: {{data.population}}</h5>
+                                        <!-- <h5>currencies: {{data.currencies.currencies}}</h5> -->
+                                </div>                
+                        </div>
+                        
+                    </div>
+            
+                    
+                </div>
+            <!-- </div>
+        </div> -->
+            
+    </div>

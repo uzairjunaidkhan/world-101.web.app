@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-dark bg-dark text-white" id="navbar1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Where in the world</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- As a link -->
+<!-- <nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Button
+    </button>
+  </div>
+</nav> -->
+
+
+<!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a> -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Where in the world </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <button _ngcontent-hox-c6="" type="button" class="btn btn-dark" style="width: 100%; margin-top: 15px;" routerLink="search">Search</button>
+    <button _ngcontent-hox-c6="" type="button" class="btn btn-dark" style="width: 100%; margin-top: 15px;" routerLink="">Show all</button>
+
+    <!-- <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div> -->
+    
+    
+  <!-- <div class="form-check form-switch" >
+    <input class="form-check-input" type="checkbox" role="switch" id="selector" (click)="myFunction()"/>
+    <label class="form-check-label"  for="selector">Dark Mode</label>
+  </div> -->
+
+  </div>
+</div>
+
+<div class="container-fluid " id="homepage">
+  <router-outlet></router-outlet>
+</div>

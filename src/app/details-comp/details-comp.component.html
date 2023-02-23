@@ -1,0 +1,52 @@
+
+<!-- <div *ngFor="let data of rowData2">
+        <img src="{{data.flags.png}}" alt="...">
+        <h5 class="fw-bolder">{{data.name.common}}</h5>
+   
+        {{data.capital}}
+       
+       
+</div> -->
+
+<div class="container-fluid" style="margin-top: 10%; min-width: 330px;">
+<!-- 
+    <div class="card" style="margin-top: 10%; min-width: 330px;">
+        <div class="card-body" style="background-color:whitesmoke;"> -->
+
+            <div class="row "  *ngFor="let data of rowData2" style="padding: 20 0 20 0;  margin-bottom: 15px;">
+    
+                <div class="col mb-5 d-flex align-items-center justify-content-center" style="margin-bottom: 0px !important; padding: 0px;">
+                    <img src="{{data.flags.png}}" alt="...">
+                    
+                </div>
+                <div class="col mb-5" style="margin-bottom: 0px !important; margin-top: 25px;  ">
+                    <h5 class="fw-bolder">{{data.name.official}}</h5>
+                    <br>
+    
+                    <div class="row">
+                    
+                            <div class="col mb-5" style="margin-bottom: 0px !important;">
+                                    <h5>Name: {{data.name.common}}</h5>
+                                    <h5>Region: {{data.region}}</h5>
+                                    <h5>Continents: {{data.continents}}</h5>
+                                    <!-- <h5>Continents: {{data.languages['']}}</h5> -->
+                                    
+            
+                            </div>
+                            <div class="col mb-5" style="margin-bottom: 0px !important;">      
+                                    <h5>Capital: {{data.capital}}</h5>
+                                    <h5>Population: {{data.population}}</h5>
+                                    <!-- <h5>currencies: {{data.currencies.currencies}}</h5> -->
+                            </div>                
+                    </div>
+                    
+                </div>
+        
+                
+            </div>
+        <!-- </div>
+    </div> -->
+        
+</div>
+        
+      
